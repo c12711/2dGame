@@ -1,6 +1,9 @@
 #include "SDL.h"
 #include "Game.h"
 #include "SDL_image.h"
+#include "stdio.h"
+#include "KeyFlags.h"
+
 
 Game::Game()
 {
@@ -54,99 +57,173 @@ void Game::initialise()
 	// Use first (Default) renderer - this is usually Direct3D based
 	gameRenderer = SDL_CreateRenderer(gameWindow, 0, 0);
 
-
+	
 	sprite = new Sprite();
 	sprite->initialise(gameRenderer, "assets/Player-1.png (1).png");
 
 	mainPlayer = new Player();
-	mainPlayer->initialise(sprite, 100, 100, 100.0f);
+	mainPlayer->initialise(sprite, 100, 100);	
 
-	// Recipe 5 & 9 - instantiate something to collide with and shoot
+	//
+	sprite = new Sprite();
+	sprite->initialise(gameRenderer, "assets/Enemy-1.png");
+	
 	theOtherOne = new Enemy();
 	theOtherOne->initialise(sprite, 600, 400);
+}
 
-	// Recipe 9 - Bullets
-	bulletSprite = new Sprite();
-	bulletSprite->initialise(gameRenderer, "Assets\\Images\\projectile01.png");
+void Game::runGameLoop() {
 
-	bulletType = new ProjectileType();
-	bulletType->initialise(bulletSprite, 5, 600, 32, 32);
+	gameRunning = true;
 
-	for (int i = 0; i < MAX_BULLETS; i++) {
+	while (gameRunning) {
 
-		bullets[i] = nullptr;
+		// Recipe 3 - Update timing / clock
+
+		// Calculate time elapsed
+		//currentTimeIndex = SDL_GetTicks();
+		//timeDelta = currentTimeIndex - prevTimeIndex;
+		//timeDeltaInSeconds = float(timeDelta) / 1000.0f;
+
+		// Store current time index into prevTimeIndex for next frame
+		//prevTimeIndex = currentTimeIndex;
+
+		// --------------------
+
+		handleEvents();
+		update();
+		draw();
 	}
 }
-
-void Game::draw()
-{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 	//decide if want fullscreen or not when playing game.
-	int flags = 0;
-	if (fullscreen)
-	{
-		flags = SDL_WINDOW_FULLSCREEN;
+	//int flags = 0;
+	//if (fullscreen)
+	//{
+		//flags = SDL_WINDOW_FULLSCREEN;
 
-	}
+	//}
 
 	//make sure to initialise SDL properly.
-	if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
-	{
-		window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
-		renderer = SDL_CreateRenderer(window, -1, 0);
-		if (renderer)
-		{
-			SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-		}
+	//if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
+	//{
+		//window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
+		//renderer = SDL_CreateRenderer(window, -1, 0);
+		//if (renderer)
+		//{
+			//SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+		//}
 
-		isRunning = true;
-	}	
-}
+		//isRunning = true;
+	//}	
+//}
 
-void Game::handleEvents()
-{
+void Game::handleEvents() {
+	
 	SDL_Event event;
-	SDL_PollEvent(&event);
-	switch (event.type) {
-	case SDL_QUIT:
-		isRunning = false;
-		break;
+	
+	while (SDL_PollEvent(&event)) {
 
-	default:
-		break;
+		switch (event.type) {
+
+			// Check if window closed
+		case SDL_QUIT:
+			gameRunning = false;
+			break;
+
+			// Key pressed event
+		case SDL_KEYDOWN:
+
+			// Toggle key states based on key pressed
+			switch (event.key.keysym.sym) {
+
+			case SDLK_UP:
+				keyState |= Keys::Up;
+				break;
+
+			case SDLK_DOWN:
+				keyState |= Keys::Down;
+				break;
+
+			case SDLK_LEFT:
+				keyState |= Keys::Left;
+				break;
+
+			case SDLK_RIGHT:
+				keyState |= Keys::Right;
+				break;
+
+			case SDLK_SPACE:
+				keyState |= Keys::Fire;
+				break;
+
+			case SDLK_ESCAPE:
+				gameRunning = false;
+				break;
+			}
+			break;
+
+			// Key released event
+		case SDL_KEYUP:
+
+			switch (event.key.keysym.sym)
+			{
+			case SDLK_UP:
+				keyState &= (~Keys::Up);
+				break;
+
+			case SDLK_DOWN:
+				keyState &= (~Keys::Down);
+				break;
+
+			case SDLK_LEFT:
+				keyState &= (~Keys::Left);
+				break;
+
+			case SDLK_RIGHT:
+				keyState &= (~Keys::Right);
+				break;
+
+			case SDLK_SPACE:
+				keyState &= (~Keys::Fire);
+
+			}
+		}
 	}
 }
 
-void Game::update()
-{
-	cnt++;
-	std::cout << cnt << std::endl;
-}
+void Game::update() {
 
-void Game::render()
-{
-	SDL_RenderClear(renderer);
-}
+	// Player movement through keys
+	int		xMovement = 0.0f;
+	int		yMovement = 0.0f;
+	float	rotation = 0.0f;
 
-void Game::clean()
-{
-	SDL_DestroyWindow(window);
-	SDL_DestroyRenderer(renderer);
-	SDL_Quit();
-	std::cout << "Game cleaned" << std::endl;
-}
 
+	if (keyState & Keys::Left)
+		xMovement = -10.0f;
+	else if (keyState & Keys::Right)
+		xMovement = 10.0f;
+
+	if (keyState & Keys::Up)
+		yMovement = -10.0f;
+	else if (keyState & Keys::Down)
+		yMovement = 10.0f;
+
+
+	mainPlayer->move(xMovement * timeDeltaInSeconds, yMovement * timeDeltaInSeconds);
+	mainPlayer->rotate(rotation * timeDeltaInSeconds);
+
+
+	if (CD::intersectAABB(mainPlayer->getBoundingBox(), theOtherOne->getBoundingBox())) {
+
+		// A hit!
+		mainPlayer->addHealth(-0.1f);
+
+		if (mainPlayer->getHealth() <= 0.0f) {
+
+			printf("GAME OVER\n");
+			gameRunning = false;
+		}
+	}
+}
