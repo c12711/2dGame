@@ -60,8 +60,7 @@ void Enemy::move(int xMovement, int yMovement) {
 // Recipe 9 - addHealth called when bullets hit with negative value for amountToAdd parameter
 void Enemy::addHealth(int amountToAdd) {
 
-	health += amountToAdd;
-	printf("health = %d\n", health);
+	health += amountToAdd;	
 }
 
 

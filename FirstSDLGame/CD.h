@@ -8,7 +8,7 @@ struct CD {
 	static bool intersectAABB(CD A, CD B) {
 
 		return (fabs(A.pos.x - B.pos.x) < (A.w + B.w) &&
-			fabs(A.pos.y - B.pos.y) < (A.h + B.h));
+				fabs(A.pos.y - B.pos.y) < (A.h + B.h));
 	}
 
 

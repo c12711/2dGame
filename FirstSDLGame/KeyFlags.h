@@ -3,12 +3,6 @@
 #include <cstdint>
 
 // Key states used for player control
-class KeyFlags
-{
-public:
-	KeyFlags();
-	~KeyFlags();
-};
 
 typedef uint32_t KeyFlags;
 

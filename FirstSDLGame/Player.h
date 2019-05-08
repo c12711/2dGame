@@ -17,7 +17,7 @@ private:
 	// player rotation
 	float			orientation;
 
-	Sprite*			sprite;
+	Sprite*			sprite = nullptr;
 
 	// collision detection bounding volume
 	float			w;

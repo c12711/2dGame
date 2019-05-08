@@ -1,7 +1,6 @@
 #include "Player.h"
 
 
-
 Player::Player()
 {
 }
@@ -10,6 +9,7 @@ Player::Player()
 Player::~Player()
 {
 }
+
 
 void Player::initialise(Sprite* sprite, int initX, int initY, float initHealth) {
 
@@ -104,5 +104,5 @@ void Player::addHealth(float amountToAdd) {
 
 void Player::addPoints(int amountToAdd) {
 
-	poinrs += amountToAdd;
+	points += amountToAdd;
 }
