@@ -1,0 +1,245 @@
+﻿  Game.cpp
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\keyflags.h(13): error C2371: 'KeyFlags': redefinition; different basic types
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\keyflags.h(6): note: see declaration of 'KeyFlags'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): error C2664: 'KeyFlags::KeyFlags(const KeyFlags &)': cannot convert argument 1 from 'int' to 'const KeyFlags &'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): note: Reason: cannot convert from 'int' to 'const KeyFlags'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'title': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'width': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'height': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'flags': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(121): error C2664: 'SDL_Renderer *SDL_CreateRenderer(SDL_Window *,int,Uint32)': cannot convert argument 1 from 'int' to 'SDL_Window *'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(121): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(122): error C2059: syntax error: 'if'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(123): error C2143: syntax error: missing ';' before '{'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(123): error C2447: '{': missing function header (old-style formal list?)
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(127): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(151): error C2678: binary '|=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator |=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator |=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(151): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(155): error C2678: binary '|=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator |=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator |=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(155): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(159): error C2678: binary '|=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator |=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator |=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(159): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(163): error C2678: binary '|=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator |=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator |=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(163): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(167): error C2678: binary '|=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator |=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator |=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator |=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator |=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(167): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(182): error C2678: binary '&=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator &=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator &=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(182): note: while trying to match the argument list '(KeyFlags, int)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(186): error C2678: binary '&=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator &=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator &=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(186): note: while trying to match the argument list '(KeyFlags, int)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(190): error C2678: binary '&=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator &=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator &=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(190): note: while trying to match the argument list '(KeyFlags, int)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(194): error C2678: binary '&=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator &=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator &=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(194): note: while trying to match the argument list '(KeyFlags, int)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(198): error C2678: binary '&=': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE &operator &=(ORIENTATION_PREFERENCE &,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE &operator &=(AR_STATE &,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_DPI_CHANGE_BEHAVIORS &,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &operator &=(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS &,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_IO_RATE_CONTROL_FLAGS &,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS &operator &=(JOB_OBJECT_NET_RATE_CONTROL_FLAGS &,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(198): note: while trying to match the argument list '(KeyFlags, int)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(208): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(209): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(213): error C2678: binary '&': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE operator &(ORIENTATION_PREFERENCE,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE operator &(AR_STATE,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS operator &(DIALOG_DPI_CHANGE_BEHAVIORS,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS operator &(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_IO_RATE_CONTROL_FLAGS,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_NET_RATE_CONTROL_FLAGS,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(213): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(214): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(215): error C2678: binary '&': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE operator &(ORIENTATION_PREFERENCE,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE operator &(AR_STATE,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS operator &(DIALOG_DPI_CHANGE_BEHAVIORS,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS operator &(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_IO_RATE_CONTROL_FLAGS,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_NET_RATE_CONTROL_FLAGS,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(215): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(216): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(218): error C2678: binary '&': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE operator &(ORIENTATION_PREFERENCE,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE operator &(AR_STATE,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS operator &(DIALOG_DPI_CHANGE_BEHAVIORS,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS operator &(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_IO_RATE_CONTROL_FLAGS,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_NET_RATE_CONTROL_FLAGS,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(218): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(219): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(220): error C2678: binary '&': no operator found which takes a left-hand operand of type 'KeyFlags' (or there is no acceptable conversion)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15572): note: could be 'ORIENTATION_PREFERENCE operator &(ORIENTATION_PREFERENCE,ORIENTATION_PREFERENCE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(15549): note: or       'AR_STATE operator &(AR_STATE,AR_STATE) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5209): note: or       'DIALOG_DPI_CHANGE_BEHAVIORS operator &(DIALOG_DPI_CHANGE_BEHAVIORS,DIALOG_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(5186): note: or       'DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS operator &(DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS,DIALOG_CONTROL_DPI_CHANGE_BEHAVIORS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(12012): note: or       'JOB_OBJECT_IO_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_IO_RATE_CONTROL_FLAGS,JOB_OBJECT_IO_RATE_CONTROL_FLAGS) throw()'
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winnt.h(11976): note: or       'JOB_OBJECT_NET_RATE_CONTROL_FLAGS operator &(JOB_OBJECT_NET_RATE_CONTROL_FLAGS,JOB_OBJECT_NET_RATE_CONTROL_FLAGS) throw()'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(220): note: while trying to match the argument list '(KeyFlags, Keys)'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(221): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(223): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  main.cpp
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\keyflags.h(13): error C2371: 'KeyFlags': redefinition; different basic types
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\keyflags.h(6): note: see declaration of 'KeyFlags'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): error C2664: 'KeyFlags::KeyFlags(const KeyFlags &)': cannot convert argument 1 from 'int' to 'const KeyFlags &'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): note: Reason: cannot convert from 'int' to 'const KeyFlags'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+  Player.cpp
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
+  Sprite.cpp
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\keyflags.h(13): error C2371: 'KeyFlags': redefinition; different basic types
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\keyflags.h(6): note: see declaration of 'KeyFlags'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): error C2664: 'KeyFlags::KeyFlags(const KeyFlags &)': cannot convert argument 1 from 'int' to 'const KeyFlags &'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): note: Reason: cannot convert from 'int' to 'const KeyFlags'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(36): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): error C2011: 'Game': 'class' type redefinition
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(8): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(12): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(15): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(19): warning C4508: '{dtor}': function should return a value; 'void' return type assumed
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(21): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(30): error C2065: 'gameWindow': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(54): error C2065: 'gameRenderer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(54): error C2065: 'gameWindow': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(58): error C2065: 'gameRenderer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(58): error C2065: 'gameWindow': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(61): error C2065: 'playerSprite': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(62): error C2065: 'playerSprite': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(62): error C2065: 'gameRenderer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(64): error C2065: 'mainPlayer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(65): error C2065: 'mainPlayer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(65): error C2065: 'playerSprite': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(68): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(70): error C2065: 'gameRunning': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(72): error C2065: 'gameRunning': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(86): error C3861: 'handleEvents': identifier not found
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(87): error C3861: 'update': identifier not found
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(88): error C3861: 'draw': identifier not found
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(92): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'title': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'width': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'height': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(120): error C2065: 'flags': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(121): error C2664: 'SDL_Renderer *SDL_CreateRenderer(SDL_Window *,int,Uint32)': cannot convert argument 1 from 'int' to 'SDL_Window *'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(121): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(122): error C2059: syntax error: 'if'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(123): error C2143: syntax error: missing ';' before '{'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(123): error C2447: '{': missing function header (old-style formal list?)
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(127): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(131): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(141): error C2065: 'gameRunning': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(151): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(155): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(159): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(163): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(167): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(171): error C2065: 'gameRunning': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(182): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(186): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(190): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(194): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(198): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(205): error C2027: use of undefined type 'Game'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(8): note: see declaration of 'Game'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(208): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(209): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(213): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(214): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(215): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(216): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(218): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(219): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(220): error C2065: 'keyState': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(221): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(223): error C2065: 'mainPlayer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(223): error C2065: 'timeDeltaInSeconds': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(224): error C2065: 'mainPlayer': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(224): error C2065: 'timeDeltaInSeconds': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(23): error C2511: 'void Sprite::initialise(SDL_Renderer *,const char *)': overloaded member function not found in 'Sprite'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): note: see declaration of 'Sprite'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(45): error C2511: 'void Sprite::draw(SDL_Renderer *,SDL_Rect *,float)': overloaded member function not found in 'Sprite'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): note: see declaration of 'Sprite'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(48): error C2065: 'texture': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(49): error C2065: 'sourceRectangle': undeclared identifier
+  Generating Code...
