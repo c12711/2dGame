@@ -52,7 +52,7 @@ bool BulletInstance::exceededRange() {
 	return distanceTravelled >= type->getRange();
 }
 
-AABB BulletInstance::getBoundingBox() {
+CD BulletInstance::getBoundingBox() {
 
 	return boundingBox;
 }

@@ -71,9 +71,6 @@
     <ClInclude Include="Enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ShieldPickup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="BulletInstance.h">
       <Filter>Bullets</Filter>
     </ClInclude>

@@ -3,7 +3,8 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "KeyFlags.h"
-
+#include "BulletInstance.h"
+#include "ProjectileType.h"
 
 class Game
 {
@@ -36,6 +37,13 @@ private:
 	// Enemy for shooting and collisions
 	Enemy*			theOtherOne = nullptr;
 
+	// Recipe 9 - Bullets
+	static const int MAX_BULLETS = 1000;
+
+	Sprite* bulletSprite = nullptr;
+	ProjectileType* bulletType = nullptr;
+
+	BulletInstance* bullets[MAX_BULLETS];
 
 
 	void handleEvents();

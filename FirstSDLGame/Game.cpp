@@ -106,9 +106,9 @@ void Game::runGameLoop() {
 
 
 void Game::handleEvents() {
-	
+
 	SDL_Event event;
-	
+
 	while (SDL_PollEvent(&event)) {
 
 		switch (event.type) {
@@ -186,11 +186,17 @@ void Game::handleEvents() {
 
 						bullets[i] = new BulletInstance();
 						bullets[i]->initialise(bulletType, mainPlayer->getPosition(), FloatA(200.0f, 0.0f));
+					}
+				}
 
+				break;
 			}
+
+			break;
 		}
 	}
 }
+
 
 void Game::update() {
 
@@ -200,19 +206,48 @@ void Game::update() {
 	float	rotation = 0.0f;
 
 
-	if (keyState & Keys::Left)
-		xMovement = -10.0f;
-	else if (keyState & Keys::Right)
-		xMovement = 10.0f;
+	if (keyState & Keys::Left) {
+		xMovement = -100.0f;
+	}
+	else {
+		if (keyState & Keys::Right)
+			xMovement = 100.0f;
+		else if (keyState & Keys::Up)
+			yMovement = -100.0f;
+		else if (keyState & Keys::Down)
+			yMovement = 100.0f;
+	
 
-	if (keyState & Keys::Up)
-		yMovement = -10.0f;
-	else if (keyState & Keys::Down)
-		yMovement = 10.0f;
+	// Ensure length of direction vector is consistent for axis-aligned and diagonal movement
+	float dx = float(xMovement);
+	float dy = float(yMovement);
+
+	float dLength = sqrtf(dx * dx + dy * dy);
+
+	if (dLength > 0.0f) {
+
+		dx = dx / dLength;
+		dy = dy / dLength;
+
+		dx *= 100.0f;
+		dy *= 100.0f;
+
+		xMovement = dx;
+		yMovement = dy;
+	}
+}
 
 
 	mainPlayer->move(xMovement * timeDeltaInSeconds, yMovement * timeDeltaInSeconds);
 	mainPlayer->rotate(rotation * timeDeltaInSeconds);
+
+	// Recipe 9 - Update bullets
+	for (int i = 0; i < MAX_BULLETS; i++) {
+
+		if (bullets[i]) {
+			bullets[i]->update(timeDeltaInSeconds);
+		}
+	}
 
 
 	if (CD::intersectAABB(mainPlayer->getBoundingBox(), theOtherOne->getBoundingBox())) {
@@ -226,4 +261,55 @@ void Game::update() {
 			gameRunning = false;
 		}
 	}
+
+	// Recipe 9 - Check for bullet collisions with 'theOtherOne' Enemy object
+	for (int i = 0; i < MAX_BULLETS; i++) {
+
+		if (bullets[i]) {
+
+			if (CD::intersectAABB(bullets[i]->getBoundingBox(), theOtherOne->getBoundingBox())) {
+
+				printf("Hit!\n");
+				bullets[i]->hit(theOtherOne);
+			}
+		}
+	}
+
+	// Recipe 9 - Check for bullets out of range - delete when found
+	for (int i = 0; i < MAX_BULLETS; i++) {
+
+		if (bullets[i] && bullets[i]->exceededRange()) {
+
+			printf("eol!\n");
+			delete bullets[i];
+			bullets[i] = nullptr;
+		}
+	}
+
+void Game::draw() {
+
+	// 1. Clear the screen
+	SDL_SetRenderDrawColor(gameRenderer, 0, 0, 0, 255); // Colour provided as red, green, blue and alpha (transparency) values (ie. RGBA)
+	SDL_RenderClear(gameRenderer);
+
+
+	// 2. Draw the scene...
+
+	// Draw the main player
+	mainPlayer->draw(gameRenderer);
+
+	// Recipe 5 - instantiate something to collide against
+	theOtherOne->draw(gameRenderer);
+
+	// Recipe 9 - Draw bullets
+	for (int i = 0; i < MAX_BULLETS; i++) {
+
+		if (bullets[i]) {
+			bullets[i]->draw(gameRenderer);
+		}
+	}
+
+
+	// 3. Present the current frame to the screen
+	SDL_RenderPresent(gameRenderer);
 }

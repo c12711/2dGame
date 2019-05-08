@@ -38,8 +38,7 @@ void Sprite::initialise(SDL_Renderer* renderer, const char *pathToImage)
 }
 
 void Sprite::draw(SDL_Renderer* renderer, SDL_Rect* targetRectangle, float renderOrientation)
-{
-	
+{	
 	SDL_RenderCopyEx(renderer,
 		texture,
 		&sourceRectangle, 
@@ -47,8 +46,6 @@ void Sprite::draw(SDL_Renderer* renderer, SDL_Rect* targetRectangle, float rende
 		renderOrientation,
 		0,
 		SDL_FLIP_NONE);
-
-
 }
 
 

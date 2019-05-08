@@ -22,17 +22,16 @@ public:
 	~BulletInstance();
 
 	// ProjectileInstance interface
-	void initialise(ProjectileType* type, Float2 initPos, Float2 initVel);
+	void initialise(ProjectileType* type, FloatA initPos, FloatA initVel);
 
 	void update(float tDelta);
 	void hit(Enemy* target);
 	bool exceededRange();
 
-	AABB getBoundingBox();
+	CD getBoundingBox();
 
 	void draw(SDL_Renderer* renderer);
 };
 
-};
 
 

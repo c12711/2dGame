@@ -170,7 +170,6 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="ProjectileType.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="ShieldPickup.h" />
     <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <ItemGroup>
