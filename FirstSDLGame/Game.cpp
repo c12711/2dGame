@@ -104,19 +104,6 @@ void Game::runGameLoop() {
 
 	//}
 
-	//make sure to initialise SDL properly.
-	//if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
-	//{
-		//window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
-		//renderer = SDL_CreateRenderer(window, -1, 0);
-		//if (renderer)
-		//{
-			//SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-		//}
-
-		//isRunning = true;
-	//}	
-//}
 
 void Game::handleEvents() {
 	
@@ -186,6 +173,19 @@ void Game::handleEvents() {
 
 			case SDLK_SPACE:
 				keyState &= (~Keys::Fire);
+
+				// Find first "free" bullet
+				if (1) {
+
+					int i = 0;
+					while (bullets[i] != nullptr && i < MAX_BULLETS) {
+						i++;
+					}
+
+					if (i < MAX_BULLETS) {
+
+						bullets[i] = new BulletInstance();
+						bullets[i]->initialise(bulletType, mainPlayer->getPosition(), FloatA(200.0f, 0.0f));
 
 			}
 		}

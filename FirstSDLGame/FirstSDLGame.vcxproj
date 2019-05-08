@@ -150,21 +150,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BulletInstance.cpp" />
     <ClCompile Include="CD.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ProjectileType.cpp" />
     <ClCompile Include="ShieldPickup.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BulletInstance.h" />
     <ClInclude Include="CD.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="FloatA.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="KeyFlags.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="ProjectileType.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ShieldPickup.h" />
     <ClInclude Include="Sprite.h" />

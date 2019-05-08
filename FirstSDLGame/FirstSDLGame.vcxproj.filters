@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Bullets">
+      <UniqueIdentifier>{04b0550e-ad84-4709-a876-b8f6f664b4b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="ShieldPickup.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletInstance.cpp">
+      <Filter>Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileType.cpp">
+      <Filter>Bullets</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +73,12 @@
     </ClInclude>
     <ClInclude Include="ShieldPickup.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletInstance.h">
+      <Filter>Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileType.h">
+      <Filter>Bullets</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
