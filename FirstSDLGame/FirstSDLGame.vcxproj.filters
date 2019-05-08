@@ -16,6 +16,9 @@
     <Filter Include="Bullets">
       <UniqueIdentifier>{04b0550e-ad84-4709-a876-b8f6f664b4b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pickups">
+      <UniqueIdentifier>{12cde04c-942f-42db-ad16-3dc9b01b68d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -44,6 +47,12 @@
     </ClCompile>
     <ClCompile Include="ProjectileType.cpp">
       <Filter>Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="ShieldP.cpp">
+      <Filter>Pickups</Filter>
+    </ClCompile>
+    <ClCompile Include="MeteorLaserP.cpp">
+      <Filter>Pickups</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="ProjectileType.h">
       <Filter>Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="ShieldP.h">
+      <Filter>Pickups</Filter>
+    </ClInclude>
+    <ClInclude Include="MeteorLaserP.h">
+      <Filter>Pickups</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

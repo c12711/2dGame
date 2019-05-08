@@ -57,7 +57,7 @@ void Game::initialise()
 	// Use first (Default) renderer - this is usually Direct3D based
 	gameRenderer = SDL_CreateRenderer(gameWindow, 0, 0);
 
-	
+	//
 	sprite = new Sprite();
 	sprite->initialise(gameRenderer, "assets/Player-1.png (1).png");
 
@@ -66,10 +66,24 @@ void Game::initialise()
 
 	//
 	sprite = new Sprite();
-	sprite->initialise(gameRenderer, "assets/Enemy-1.png");
+	sprite->initialise(gameRenderer, "assets/Enemy-1.png.png");
 	
 	theOtherOne = new Enemy();
 	theOtherOne->initialise(sprite, 600, 400);
+
+	//
+	sprite = new Sprite();
+	sprite->initialise(gameRenderer, "assets/Laser-1.png.png");
+
+
+	//
+	sprite = new Sprite();
+	sprite->initialise(gameRenderer, "assets/Meteor Laser-1.png.png");
+
+
+	//
+	sprite = new Sprite();
+	sprite->initialise(gameRenderer, "assets/Shield-1.png.png");
 }
 
 void Game::runGameLoop() {
