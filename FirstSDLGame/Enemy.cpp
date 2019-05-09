@@ -11,7 +11,7 @@ Enemy::~Enemy()
 {
 }
 
-void Enemy::initialise(Sprite* sprite, int initX, int initY) {
+void Enemy::initialise(Sprite* sprite, float initX, float initY, int initHealth, float speed, int points) {
 
 	x = initX;
 	y = initY;
@@ -27,6 +27,8 @@ void Enemy::initialise(Sprite* sprite, int initX, int initY) {
 	float cy = y + (h / 2.0f);
 
 	boundingBox = CD(cx, cy, w / 2.0f, h / 2.0f); // Store half w, h in the bounding box!
+
+	health = initHealth;
 }
 
 void Enemy::update() {
@@ -47,7 +49,7 @@ void Enemy::draw(SDL_Renderer* renderer) {
 }
 
 
-void Enemy::move(int xMovement, int yMovement) {
+void Enemy::move(float xMovement, float yMovement) {
 
 	x += xMovement;
 	y += yMovement;
@@ -56,14 +58,6 @@ void Enemy::move(int xMovement, int yMovement) {
 	boundingBox.move(xMovement, yMovement);
 }
 
-
-// Recipe 9 - addHealth called when bullets hit with negative value for amountToAdd parameter
-void Enemy::addHealth(int amountToAdd) {
-
-	health += amountToAdd;	
-}
-
-
 // Recipe 5 - Add AABB accessor so Game Object can get this information to test for collisions
 // Note: GRASP dictates the Enemy class knows nothing about the Game Object - and it doesn't - but any caller can ask for the bounding box
 CD Enemy::getBoundingBox() {
@@ -71,3 +65,18 @@ CD Enemy::getBoundingBox() {
 	return boundingBox;
 }
 
+// Recipe 9 - addHealth called when bullets hit with negative value for amountToAdd parameter
+void Enemy::addHealth(int amountToAdd) {
+
+	health += amountToAdd;	
+}
+
+int Enemy::getHealth() {
+
+	return health;
+}
+
+void Enemy::addPoints(int amountToAdd) {
+
+	points += amountToAdd;
+}

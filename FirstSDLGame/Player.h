@@ -17,6 +17,8 @@ private:
 	// player rotation
 	float			orientation;
 
+	float			speed;
+
 	Sprite*			sprite = nullptr;
 
 	// collision detection bounding volume
@@ -25,15 +27,13 @@ private:
 	CD				boundingBox;
 
 	float			health;
-
-	int				points;
-
+	
 
 public:
 	Player();
 	~Player();
 
-	void initialise(Sprite* sprite, int initx, int initY, float initHealth);
+	void initialise(Sprite* sprite, int initx, int initY, float initHealth, float speed);
 	void update();
 	void draw(SDL_Renderer* renderer);
 
@@ -49,8 +49,5 @@ public:
 	// Recipe 8 - Update health by amountToAdd (if amountToAdd is negative the player's health goes down!)
 	void addHealth(float amountToAdd);
 	float getHealth();
-
-	//
-	void addPoints(int amountToAdd);
 };
 

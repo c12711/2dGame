@@ -12,6 +12,8 @@ class BulletInstance
 	FloatA			vel; // Direction of travel (serves as velocity)
 
 	float			distanceTravelled; // How far the bullet has travelled
+	float			speed;
+	float			lifetime;
 
 	// Bounding volume for collisions
 	CD			boundingBox;

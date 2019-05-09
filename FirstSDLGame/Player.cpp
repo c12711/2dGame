@@ -11,7 +11,7 @@ Player::~Player()
 }
 
 
-void Player::initialise(Sprite* sprite, int initX, int initY, float initHealth) {
+void Player::initialise(Sprite* sprite, int initX, int initY, float initHealth, float speed) {
 
 	x = initX;
 	y = initY;
@@ -31,8 +31,7 @@ void Player::initialise(Sprite* sprite, int initX, int initY, float initHealth) 
 	// Recipe 8 - Health
 	health = initHealth;
 
-	// Recipe 7 - Points
-	points = 0;
+	float speed = speed;
 }
 
 
@@ -59,12 +58,6 @@ void Player::draw(SDL_Renderer* renderer) {
 FloatA Player::getPosition() {
 
 	return FloatA(x, y);
-}
-
-
-float Player::getHealth() {
-
-	return health;
 }
 
 
@@ -98,11 +91,10 @@ CD Player::getBoundingBox() {
 void Player::addHealth(float amountToAdd) {
 
 	health += amountToAdd;
-	printf("health = %f\n", health);
+	//printf("health = %f\n", health);
 }
 
+float Player::getHealth() {
 
-void Player::addPoints(int amountToAdd) {
-
-	points += amountToAdd;
+	return health;
 }

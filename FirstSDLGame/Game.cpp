@@ -54,34 +54,42 @@ void Game::initialise()
 	gameRenderer = SDL_CreateRenderer(gameWindow, 0, 0);
 
 
-	// Use first (Default) renderer - this is usually Direct3D based
-	gameRenderer = SDL_CreateRenderer(gameWindow, 0, 0);
-
-	//
+	// Player sprite
 	sprite = new Sprite();
 	sprite->initialise(gameRenderer, "assets/Player-1.png (1).png");
 
 	mainPlayer = new Player();
-	mainPlayer->initialise(sprite, 100, 100);	
+	mainPlayer->initialise(sprite, 100, 100, 10, 5.5);	
 
-	//
+	// Enemy sprite
 	sprite = new Sprite();
 	sprite->initialise(gameRenderer, "assets/Enemy-1.png.png");
 	
 	theOtherOne = new Enemy();
-	theOtherOne->initialise(sprite, 600, 400);
+	theOtherOne->initialise(sprite, 600, 400, 10, 4, 10);
 
-	//
-	sprite = new Sprite();
-	sprite->initialise(gameRenderer, "assets/Laser-1.png.png");
+	// Primary bullet sprite (laser)
+	bulletSprite = new Sprite();
+	bulletSprite->initialise(gameRenderer, "assets/Laser-1.png.png");
+
+	bulletType = new ProjectileType();
+	bulletType->initialise(bulletSprite, 5, 600, 32, 32, 9, 3);
+	
+	// Meteor laser pickup sprite
+	bulletSprite = new Sprite();
+	bulletSprite->initialise(gameRenderer, "assets/Meteor Laser-1.png.png");
+
+	bulletType = new ProjectileType();
+	bulletType->initialise(bulletSprite, 10, 600, 32, 32, 9, 3);
 
 
-	//
-	sprite = new Sprite();
-	sprite->initialise(gameRenderer, "assets/Meteor Laser-1.png.png");
+	for (int i = 0; i < MAX_BULLETS; i++) {
+
+		bullets[i] = nullptr;
+	}
 
 
-	//
+	// Shield pickup sprite
 	sprite = new Sprite();
 	sprite->initialise(gameRenderer, "assets/Shield-1.png.png");
 }
@@ -95,14 +103,12 @@ void Game::runGameLoop() {
 		// Recipe 3 - Update timing / clock
 
 		// Calculate time elapsed
-		//currentTimeIndex = SDL_GetTicks();
-		//timeDelta = currentTimeIndex - prevTimeIndex;
-		//timeDeltaInSeconds = float(timeDelta) / 1000.0f;
+		currentTimeIndex = SDL_GetTicks();
+		timeDelta = currentTimeIndex - prevTimeIndex;
+		timeDeltaInSeconds = float(timeDelta) / 1000.0f;
 
 		// Store current time index into prevTimeIndex for next frame
-		//prevTimeIndex = currentTimeIndex;
-
-		// --------------------
+		prevTimeIndex = currentTimeIndex;
 
 		handleEvents();
 		update();
@@ -230,26 +236,27 @@ void Game::update() {
 			yMovement = -100.0f;
 		else if (keyState & Keys::Down)
 			yMovement = 100.0f;
-	
 
-	// Ensure length of direction vector is consistent for axis-aligned and diagonal movement
-	float dx = float(xMovement);
-	float dy = float(yMovement);
 
-	float dLength = sqrtf(dx * dx + dy * dy);
+		// Ensure length of direction vector is consistent for axis-aligned and diagonal movement
+		float dx = float(xMovement);
+		float dy = float(yMovement);
 
-	if (dLength > 0.0f) {
+		float dLength = sqrtf(dx * dx + dy * dy);
 
-		dx = dx / dLength;
-		dy = dy / dLength;
+		if (dLength > 0.0f) {
 
-		dx *= 100.0f;
-		dy *= 100.0f;
+			dx = dx / dLength;
+			dy = dy / dLength;
 
-		xMovement = dx;
-		yMovement = dy;
+			dx *= 100.0f;
+			dy *= 100.0f;
+
+			xMovement = dx;
+			yMovement = dy;
+		}
 	}
-}
+
 
 
 	mainPlayer->move(xMovement * timeDeltaInSeconds, yMovement * timeDeltaInSeconds);
@@ -299,6 +306,7 @@ void Game::update() {
 			bullets[i] = nullptr;
 		}
 	}
+}
 
 void Game::draw() {
 

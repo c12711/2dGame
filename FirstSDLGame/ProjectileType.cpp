@@ -9,13 +9,15 @@ ProjectileType::~ProjectileType()
 {
 }
 
-void ProjectileType::initialise(Sprite* projectileSprite, float projectileDamage, float projectileRange, float width, float height) {
+void ProjectileType::initialise(Sprite* projectileSprite, float projectileDamage, float projectileRange, float width, float height, float projectileSpeed, int projectileLifetime) {
 
 	sprite = projectileSprite;
 	damage = projectileDamage;
 	range = projectileRange;
 	w = width;
 	h = height;
+	speed = projectileSpeed;
+	lifetime = projectileLifetime;
 }
 
 float ProjectileType::getDamage() {
@@ -37,6 +39,17 @@ float ProjectileType::getHeight() {
 
 	return h;
 }
+
+float ProjectileType::getSpeed() {
+
+	return speed;
+}
+
+int ProjectileType::getLifetime() {
+
+	return lifetime;
+}
+
 
 void ProjectileType::draw(SDL_Renderer* renderer, FloatA pos, float orientation) {
 
