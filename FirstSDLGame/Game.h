@@ -1,3 +1,4 @@
+#pragma once
 
 #include "Sprite.h"
 #include "Player.h"
@@ -6,8 +7,8 @@
 #include "BulletInstance.h"
 #include "ProjectileType.h"
 
-class Game
-{
+class Game {
+
 public:
 
 	Game();
@@ -38,7 +39,7 @@ private:
 	Enemy*			theOtherOne = nullptr;
 
 	// Recipe 9 - Bullets
-	static const int MAX_BULLETS = 1000;
+	static const int MAX_BULLETS = 2000;
 
 	Sprite* bulletSprite = nullptr;
 	ProjectileType* bulletType = nullptr;

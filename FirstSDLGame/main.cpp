@@ -4,10 +4,11 @@
 
 
 
-int main(int argc, char* argv[])
+int main(int argc, char* args[])
 {
 	//initialisation.
 	Game* mainGame = new Game();
+
 	mainGame->initialise();
 	mainGame->runGameLoop();
 			

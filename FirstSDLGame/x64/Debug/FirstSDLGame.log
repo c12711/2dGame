@@ -1,51 +1,40 @@
 ﻿  BulletInstance.cpp
   Enemy.cpp
   Game.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(224): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(225): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(230): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(234): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(236): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(238): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(255): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(256): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(262): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   main.cpp
   MeteorLaserP.cpp
   Player.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(13): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(14): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(34): error C2082: redefinition of formal parameter 'speed'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(51): error C2660: 'Sprite::draw': function does not take 3 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): note: see declaration of 'Sprite::draw'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(14): note: see declaration of 'Sprite::draw'
   ProjectileType.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(13): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(14): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.cpp(63): error C2660: 'Sprite::draw': function does not take 3 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): note: see declaration of 'Sprite::draw'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(14): note: see declaration of 'Sprite::draw'
   ShieldP.cpp
   ShieldPickup.cpp
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\shieldpickup.cpp(1): fatal error C1083: Cannot open include file: 'ShieldPickup.h': No such file or directory
   Sprite.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(6): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(13): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(14): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(10): error C2011: 'Game': 'class' type redefinition
   c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(8): error C2027: use of undefined type 'Game'
@@ -128,18 +117,10 @@ c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(208): error C2065: 'mainPlayer': undeclared identifier
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(221): error C2027: use of undefined type 'Game'
   c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(224): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(225): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(229): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(230): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(233): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(234): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(235): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(236): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(237): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(238): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(255): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(256): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(262): error C2065: 'mainPlayer': undeclared identifier
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(262): error C2065: 'timeDeltaInSeconds': undeclared identifier
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(263): error C2065: 'mainPlayer': undeclared identifier

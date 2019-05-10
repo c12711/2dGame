@@ -1,182 +1,67 @@
 ﻿  BulletInstance.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2059: syntax error: '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2143: syntax error: missing ';' before '}'
-  CD.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\cd.cpp(6): error C2084: function 'CD::CD(void)' already has a body
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\cd.h(22): note: see previous definition of '{ctor}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\cd.cpp(11): error C2600: 'CD::~CD': cannot define a compiler-generated special member function (must be declared in the class first)
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   Enemy.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\enemy.cpp(33): error C2082: redefinition of formal parameter 'speed'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\enemy.cpp(60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   Game.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2059: syntax error: '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2143: syntax error: missing ';' before '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(76): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(83): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(224): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(225): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(230): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(234): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(236): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(238): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(255): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(256): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(262): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   main.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2059: syntax error: '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2143: syntax error: missing ';' before '}'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   MeteorLaserP.cpp
   Player.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(34): error C2082: redefinition of formal parameter 'speed'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(51): error C2660: 'Sprite::draw': function does not take 3 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): note: see declaration of 'Sprite::draw'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(49): error C2660: 'Sprite::draw': function does not take 3 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): note: see declaration of 'Sprite::draw'
   ProjectileType.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2059: syntax error: '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2143: syntax error: missing ';' before '}'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.cpp(63): error C2660: 'Sprite::draw': function does not take 3 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): note: see declaration of 'Sprite::draw'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): note: see declaration of 'Sprite::draw'
   ShieldP.cpp
   ShieldPickup.cpp
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\shieldpickup.cpp(1): fatal error C1083: Cannot open include file: 'ShieldPickup.h': No such file or directory
   Sprite.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2143: syntax error: missing ';' before '*'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(11): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(12): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2059: syntax error: '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.h(45): error C2143: syntax error: missing ';' before '}'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(10): error C2011: 'Game': 'class' type redefinition
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(8): error C2027: use of undefined type 'Game'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(12): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(15): error C2027: use of undefined type 'Game'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(19): warning C4508: '{dtor}': function should return a value; 'void' return type assumed
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(21): error C2027: use of undefined type 'Game'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(30): error C2065: 'gameWindow': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(54): error C2065: 'gameRenderer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(54): error C2065: 'gameWindow': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(58): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(59): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(59): error C2065: 'gameRenderer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(61): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(62): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(62): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(65): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(66): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(66): error C2065: 'gameRenderer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(68): error C2065: 'theOtherOne': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(69): error C2065: 'theOtherOne': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(69): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(72): error C2065: 'bulletSprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(73): error C2065: 'bulletSprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(73): error C2065: 'gameRenderer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(75): error C2065: 'bulletType': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(76): error C2065: 'bulletType': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(76): error C2065: 'bulletSprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(79): error C2065: 'bulletSprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(80): error C2065: 'bulletSprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(80): error C2065: 'gameRenderer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(82): error C2065: 'bulletType': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(83): error C2065: 'bulletType': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(83): error C2065: 'bulletSprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(86): error C2065: 'MAX_BULLETS': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(88): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(93): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(94): error C2065: 'sprite': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(94): error C2065: 'gameRenderer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(97): error C2027: use of undefined type 'Game'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(99): error C2065: 'gameRunning': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(101): error C2065: 'gameRunning': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(106): error C2065: 'currentTimeIndex': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(107): error C2065: 'timeDelta': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(107): error C2065: 'currentTimeIndex': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(107): error C2065: 'prevTimeIndex': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(108): error C2065: 'timeDeltaInSeconds': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(108): error C2065: 'timeDelta': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(111): error C2065: 'prevTimeIndex': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(111): error C2065: 'currentTimeIndex': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(113): error C3861: 'handleEvents': identifier not found
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(114): error C3861: 'update': identifier not found
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(115): error C3861: 'draw': identifier not found
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(128): error C2027: use of undefined type 'Game'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(138): error C2065: 'gameRunning': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(148): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(152): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(156): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(160): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(164): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(168): error C2065: 'gameRunning': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(179): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(183): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(187): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(191): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(195): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(201): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(201): error C2065: 'MAX_BULLETS': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(205): error C2065: 'MAX_BULLETS': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(207): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(208): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(208): error C2065: 'bulletType': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(208): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(221): error C2027: use of undefined type 'Game'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.h(9): note: see declaration of 'Game'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(224): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(225): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(229): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(230): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(233): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(234): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(235): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(236): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(237): error C2065: 'keyState': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(238): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(255): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(256): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(262): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(262): error C2065: 'timeDeltaInSeconds': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(263): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(263): error C2065: 'timeDeltaInSeconds': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(266): error C2065: 'MAX_BULLETS': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(268): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(269): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(269): error C2065: 'timeDeltaInSeconds': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(274): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(274): error C2065: 'theOtherOne': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(274): error C2660: 'CD::intersectAABB': function does not take 1 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\cd.h(8): note: see declaration of 'CD::intersectAABB'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(277): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(279): error C2065: 'mainPlayer': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(282): error C2065: 'gameRunning': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(287): error C2065: 'MAX_BULLETS': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(289): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(291): error C2065: 'bullets': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(291): error C2065: 'theOtherOne': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(291): error C2660: 'CD::intersectAABB': function does not take 1 arguments
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(291): fatal error C1003: error count exceeds 100; stopping compilation
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(1): warning C4081: expected '('; found 'newline'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C3646: 'sourceRectangle': unknown override specifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(61): error C2660: 'Sprite::initialise': function does not take 2 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(68): error C2660: 'Sprite::initialise': function does not take 2 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(75): error C2660: 'Sprite::initialise': function does not take 2 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(82): error C2660: 'Sprite::initialise': function does not take 2 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(96): error C2660: 'Sprite::initialise': function does not take 2 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(22): error C2511: 'void Sprite::initialise(SDL_Renderer *,const char *)': overloaded member function not found in 'Sprite'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): note: see declaration of 'Sprite'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(25): error C2065: 'texture': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(27): error C2065: 'sourceRectangle': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(28): error C2065: 'sourceRectangle': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(29): error C2065: 'texture': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(29): error C2065: 'sourceRectangle': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(35): error C2511: 'void Sprite::draw(SDL_Renderer *,SDL_Rect *,float)': overloaded member function not found in 'Sprite'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): note: see declaration of 'Sprite'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(37): error C2065: 'texture': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(38): error C2065: 'sourceRectangle': undeclared identifier
+  Compiling...
   Generating Code...

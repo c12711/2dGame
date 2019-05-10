@@ -1,10 +1,14 @@
 #pragma once
+
 class Sprite
 {
-	SDL_Texture* texture = nullptr;
-	SDL_Rect	 sourceRectangle;
+private:
+	
+	SDL_Texture*	texture = nullptr;
+	SDL_Rect		sourceRectangle;
 
 public:
+
 	Sprite();
 	virtual ~Sprite();
 

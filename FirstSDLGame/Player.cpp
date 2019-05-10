@@ -11,7 +11,7 @@ Player::~Player()
 }
 
 
-void Player::initialise(Sprite* sprite, int initX, int initY, float initHealth, float speed) {
+void Player::initialise(Sprite* sprite, float initX, float initY, float initHealth, float speed) {
 
 	x = initX;
 	y = initY;
@@ -30,8 +30,6 @@ void Player::initialise(Sprite* sprite, int initX, int initY, float initHealth, 
 
 	// Recipe 8 - Health
 	health = initHealth;
-
-	float speed = speed;
 }
 
 
@@ -61,7 +59,7 @@ FloatA Player::getPosition() {
 }
 
 
-void Player::move(int xMovement, int yMovement) {
+void Player::move(float xMovement, float yMovement) {
 
 	x += xMovement;
 	y += yMovement;

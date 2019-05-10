@@ -12,8 +12,8 @@ class Player
 private:
 
 	// position
-	int				x;
-	int				y;
+	float			x;
+	float			y;
 	// player rotation
 	float			orientation;
 
@@ -33,12 +33,12 @@ public:
 	Player();
 	~Player();
 
-	void initialise(Sprite* sprite, int initx, int initY, float initHealth, float speed);
+	void initialise(Sprite* sprite, float initx, float initY, float initHealth, float speed);
 	void update();
 	void draw(SDL_Renderer* renderer);
 
 	FloatA getPosition();
-	void move(int xMovement, int yMovement);
+	void move(float xMovement, float yMovement);
 
 	// player rotation
 	void rotate(float dTheta);

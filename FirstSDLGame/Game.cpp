@@ -1,3 +1,5 @@
+#pragma once
+
 #include "SDL.h"
 #include "Game.h"
 #include "SDL_image.h"
@@ -28,7 +30,7 @@ void Game::initialise()
 		throw "SDL init error";
 
 	gameWindow = SDL_CreateWindow(
-		"game name",
+		"Space Carnage",
 		SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED,
 		800,
@@ -221,8 +223,8 @@ void Game::handleEvents() {
 void Game::update() {
 
 	// Player movement through keys
-	int		xMovement = 0.0f;
-	int		yMovement = 0.0f;
+	float		xMovement = 0.0f;
+	float		yMovement = 0.0f;
 	float	rotation = 0.0f;
 
 
