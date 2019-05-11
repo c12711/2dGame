@@ -2,14 +2,13 @@
 
 class Sprite
 {
-private:
+
+	private:
 	
-	SDL_Texture*	texture = nullptr;
+	SDL_Texture* texture = nullptr;
 	SDL_Rect		sourceRectangle;
 
-	
-
-public:
+	public:
 
 	Sprite();
 	virtual ~Sprite();
