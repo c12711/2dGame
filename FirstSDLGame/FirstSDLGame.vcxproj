@@ -158,7 +158,6 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ProjectileType.cpp" />
     <ClCompile Include="ShieldP.cpp" />
-    <ClCompile Include="ShieldPickup.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -171,7 +170,6 @@
     <ClInclude Include="MeteorLaserP.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ProjectileType.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="ShieldP.h" />
     <ClInclude Include="Sprite.h" />
   </ItemGroup>

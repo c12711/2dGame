@@ -5,19 +5,13 @@
 #include "SDL_image.h"
 #include "stdio.h"
 #include "KeyFlags.h"
+#include "windows.h"
 
-
-Game::Game()
-{
-
-
+Game::Game() {
 }
 
 
-Game::~Game()
-{
-
-
+Game::~Game() {
 }
 
 void Game::initialise()
@@ -58,28 +52,28 @@ void Game::initialise()
 
 	// Player sprite
 	sprite = new Sprite();
-	sprite->initialise(gameRenderer, "assets/Player-1.png (1).png");
+	sprite->initialise(gameRenderer, "assets\\Player-1.png (1).png");
 
 	mainPlayer = new Player();
 	mainPlayer->initialise(sprite, 100, 100, 10, 5.5);	
 
 	// Enemy sprite
 	sprite = new Sprite();
-	sprite->initialise(gameRenderer, "assets/Enemy-1.png.png");
+	sprite->initialise(gameRenderer, "assets\\Enemy-1.png.png");
 	
 	theOtherOne = new Enemy();
 	theOtherOne->initialise(sprite, 600, 400, 10, 4, 10);
 
 	// Primary bullet sprite (laser)
 	bulletSprite = new Sprite();
-	bulletSprite->initialise(gameRenderer, "assets/Laser-1.png.png");
+	bulletSprite->initialise(gameRenderer, "assets\\Laser-1.png.png");
 
 	bulletType = new ProjectileType();
 	bulletType->initialise(bulletSprite, 5, 600, 32, 32, 9, 3);
 	
 	// Meteor laser pickup sprite
 	bulletSprite = new Sprite();
-	bulletSprite->initialise(gameRenderer, "assets/Meteor Laser-1.png.png");
+	bulletSprite->initialise(gameRenderer, "assets\\Meteor Laser-1.png.png");
 
 	bulletType = new ProjectileType();
 	bulletType->initialise(bulletSprite, 10, 600, 32, 32, 9, 3);
@@ -93,7 +87,7 @@ void Game::initialise()
 
 	// Shield pickup sprite
 	sprite = new Sprite();
-	sprite->initialise(gameRenderer, "assets/Shield-1.png.png");
+	sprite->initialise(gameRenderer, "assets\\Shield-1.png.png");
 }
 
 void Game::runGameLoop() {

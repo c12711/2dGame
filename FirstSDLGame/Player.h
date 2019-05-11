@@ -2,9 +2,7 @@
 
 #include "FloatA.h"
 #include "Sprite.h"
-#include "SDL_render.h"
 #include "CD.h"
-
 
 
 class Player
@@ -17,8 +15,6 @@ private:
 	// player rotation
 	float			orientation;
 
-	float			speed;
-
 	Sprite*			sprite = nullptr;
 
 	// collision detection bounding volume
@@ -27,7 +23,7 @@ private:
 	CD				boundingBox;
 
 	float			health;
-	
+	float			speed;
 
 public:
 	Player();

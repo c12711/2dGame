@@ -1,4 +1,8 @@
 #include "ProjectileType.h"
+#include "windows.h"
+#include "SDL.h"
+#include "SDL_image.h"
+#include "stdio.h"
 
 ProjectileType::ProjectileType()
 {

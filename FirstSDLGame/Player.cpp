@@ -1,4 +1,8 @@
 #include "Player.h"
+#include "windows.h"
+#include "SDL.h"
+#include "SDL_image.h"
+#include "stdio.h"
 
 
 Player::Player()
@@ -11,7 +15,7 @@ Player::~Player()
 }
 
 
-void Player::initialise(Sprite* sprite, float initX, float initY, float initHealth, float speed) {
+void Player::initialise(Sprite* sprite, float initX, float initY, float initHealth, float initSpeed) {
 
 	x = initX;
 	y = initY;
@@ -30,6 +34,8 @@ void Player::initialise(Sprite* sprite, float initX, float initY, float initHeal
 
 	// Recipe 8 - Health
 	health = initHealth;
+
+	speed = initSpeed;
 }
 
 
@@ -39,7 +45,7 @@ void Player::update() {
 
 void Player::draw(SDL_Renderer* renderer) {
 
-	SDL_Rect targetRect;
+	SDL_Rect	targetRect;
 
 	targetRect.x = int(x);
 	targetRect.y = int(y);

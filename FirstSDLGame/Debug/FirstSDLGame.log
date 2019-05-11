@@ -1,67 +1,42 @@
 ﻿  BulletInstance.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   Enemy.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   Game.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   main.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
   MeteorLaserP.cpp
   Player.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C3646: 'sourceRectangle': unknown override specifier
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(49): error C2660: 'Sprite::draw': function does not take 3 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): note: see declaration of 'Sprite::draw'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(18): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\player.cpp(55): error C2660: 'Sprite::draw': function does not take 3 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(18): note: see declaration of 'Sprite::draw'
   ProjectileType.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C3646: 'sourceRectangle': unknown override specifier
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.cpp(63): error C2660: 'Sprite::draw': function does not take 3 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): note: see declaration of 'Sprite::draw'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(18): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\projectiletype.cpp(67): error C2660: 'Sprite::draw': function does not take 3 arguments
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(18): note: see declaration of 'Sprite::draw'
   ShieldP.cpp
-  ShieldPickup.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\shieldpickup.cpp(1): fatal error C1083: Cannot open include file: 'ShieldPickup.h': No such file or directory
   Sprite.cpp
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(1): warning C4081: expected '('; found 'newline'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(2): warning C4081: expected '('; found 'newline'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C2143: syntax error: missing ';' before '*'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(7): error C2238: unexpected token(s) preceding ';'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C3646: 'sourceRectangle': unknown override specifier
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(8): error C2238: unexpected token(s) preceding ';'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C3646: 'sourceRectangle': unknown override specifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): error C2061: syntax error: identifier 'SDL_Renderer'
 c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(17): error C2061: syntax error: identifier 'SDL_Renderer'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(61): error C2660: 'Sprite::initialise': function does not take 2 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(68): error C2660: 'Sprite::initialise': function does not take 2 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(75): error C2660: 'Sprite::initialise': function does not take 2 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(82): error C2660: 'Sprite::initialise': function does not take 2 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\game.cpp(96): error C2660: 'Sprite::initialise': function does not take 2 arguments
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(16): note: see declaration of 'Sprite::initialise'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(22): error C2511: 'void Sprite::initialise(SDL_Renderer *,const char *)': overloaded member function not found in 'Sprite'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): note: see declaration of 'Sprite'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(25): error C2065: 'texture': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(27): error C2065: 'sourceRectangle': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(28): error C2065: 'sourceRectangle': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(29): error C2065: 'texture': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(29): error C2065: 'sourceRectangle': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(35): error C2511: 'void Sprite::draw(SDL_Renderer *,SDL_Rect *,float)': overloaded member function not found in 'Sprite'
-  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(4): note: see declaration of 'Sprite'
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(37): error C2065: 'texture': undeclared identifier
-c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(38): error C2065: 'sourceRectangle': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(18): error C2061: syntax error: identifier 'SDL_Renderer'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(18): error C2511: 'void Sprite::initialise(SDL_Renderer *,const char *)': overloaded member function not found in 'Sprite'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(3): note: see declaration of 'Sprite'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(34): error C2511: 'void Sprite::draw(SDL_Renderer *,SDL_Rect *,float)': overloaded member function not found in 'Sprite'
+  c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.h(3): note: see declaration of 'Sprite'
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(35): error C2065: 'texture': undeclared identifier
+c:\users\donna.cleverly\documents\joseph homework\firstsdlgame\firstsdlgame\sprite.cpp(35): error C2065: 'sourceRectangle': undeclared identifier
   Compiling...
   Generating Code...

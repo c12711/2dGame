@@ -7,6 +7,8 @@ private:
 	SDL_Texture*	texture = nullptr;
 	SDL_Rect		sourceRectangle;
 
+	
+
 public:
 
 	Sprite();

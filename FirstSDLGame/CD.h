@@ -1,4 +1,5 @@
 #pragma once
+
 #include "FloatA.h"
 #include "SDL_image.h"
 
