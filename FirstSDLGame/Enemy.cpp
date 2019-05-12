@@ -77,6 +77,7 @@ void Enemy::addHealth(int amountToAdd) {
 	health += amountToAdd;	
 }
 
+
 // Points 
 void Enemy::addPoints(int amountToAdd) {
 

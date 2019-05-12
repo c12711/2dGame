@@ -4,6 +4,7 @@
 
 // Key states used for player control
 
+// 32-bit int for KeyFlags
 typedef uint32_t KeyFlags;
 
 // Which bits are set / unset when a key is pressed / released

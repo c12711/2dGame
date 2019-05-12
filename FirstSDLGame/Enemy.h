@@ -15,17 +15,16 @@ private:
 
 	Sprite*			sprite;
 
-	float		speed;
+	float		speed; // Speed
 
 	// Bounding box
 	float			w;
 	float			h;
 	CD				boundingBox;
 
-	// Enemy health
-	int				health;
+	int				health; // Enemy health
 
-	int				points;
+	int				points; // Points for enemy
 
 public:
 	Enemy();
@@ -40,7 +39,6 @@ public:
 	CD getBoundingBox();
 
 	void addHealth(int amountToAdd);
-	int getHealth();
 
 	void addPoints(int amountToAdd);
 

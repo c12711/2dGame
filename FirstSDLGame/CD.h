@@ -16,7 +16,7 @@ struct CD {
 	// Centre point of bounding box
 	FloatA		pos;
 
-	// Half-width and half-height of the AABB
+	// Half-width and half-height of bouding box
 	float		w;
 	float		h;
 

@@ -20,7 +20,7 @@ void BulletInstance::initialise(ProjectileType* type, FloatA initPos, FloatA ini
 	this->pos = initPos;
 	this->vel = initVel;
 
-	// Temp variables to calculate the centre point of the sprite given (x, y) are the top left
+	// Calculate centre point of sprite
 	float cx = pos.x + (type->getWidth() / 2.0f);
 	float cy = pos.y + (type->getHeight() / 2.0f);
 
@@ -44,6 +44,7 @@ void BulletInstance::update(float tDelta) {
 
 void BulletInstance::hit(Enemy* target) {
 
+	// Change health when hit
 	int damageImpact = int(type->getDamage());
 	target->addHealth(-damageImpact);
 	distanceTravelled = type->getRange();
@@ -51,6 +52,7 @@ void BulletInstance::hit(Enemy* target) {
 
 bool BulletInstance::exceededRange() {
 
+	// Disappears when range exceeded
 	return distanceTravelled >= type->getRange();
 }
 

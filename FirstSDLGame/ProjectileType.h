@@ -7,21 +7,19 @@
 
 class ProjectileType
 {
-	// Projectile sprite - what it looks like
+	// Projectile sprite
 	Sprite*			sprite;
 
-	// Damage
-	float			damage;
+	float			damage; // Damage
+	
+	float			range; // Range
 
-	// Range
-	float			range;
-
-	// Dimensions of projectile in game world
+	// Projectile dimensions in game world
 	float			w, h;
 
-	float			speed;
+	float			speed; // Speed
 
-	int				lifetime;
+	int				lifetime; // Lifetime
 
 public:
 	ProjectileType();
@@ -29,7 +27,6 @@ public:
 
 	void initialise(Sprite* playerSprite, float projectileDamage, float projectileRange, float width, float height, float projectileSpeed, int projectileLifetime);
 
-	// Read-only accessors
 	float getDamage();
 	float getRange();
 	float getWidth();

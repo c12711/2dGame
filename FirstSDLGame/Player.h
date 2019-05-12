@@ -9,11 +9,12 @@ class Player
 {
 private:
 
-	// position
+	// Position
 	float			x;
 	float			y;
-	// player rotation
-	float			orientation;
+	
+	
+	float			orientation; // Player rotation
 
 	Sprite*			sprite = nullptr;
 
@@ -22,8 +23,8 @@ private:
 	float			h;
 	CD				boundingBox;
 
-	float			health;
-	float			speed;
+	float			health; // Player health
+	float			speed; // Player speed
 
 public:
 	Player();
@@ -42,7 +43,7 @@ public:
 	// Bounding box collision detection
 	CD getBoundingBox();
 
-	// Recipe 8 - Update health by amountToAdd (if amountToAdd is negative the player's health goes down!)
+	// Update health (amountToAdd neg or pos)
 	void addHealth(float amountToAdd);
 	float getHealth();
 };

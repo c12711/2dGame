@@ -9,13 +9,13 @@ class BulletInstance
 	ProjectileType*	type; // Provide access to sprite and damage
 
 	FloatA			pos; // Position
-	FloatA			vel; // Direction of travel (serves as velocity)
+	FloatA			vel; // Velocity (direction)
 
-	float			distanceTravelled; // How far the bullet has travelled
-	float			speed;
-	float			lifetime;
+	float			distanceTravelled; // Distance travelled
+	float			speed;			// Speed
+	float			lifetime;			// Lifetime
 
-	// Bounding volume for collisions
+	// Bounding box for collisions
 	CD			boundingBox;
 
 
@@ -23,7 +23,6 @@ public:
 	BulletInstance();
 	~BulletInstance();
 
-	// ProjectileInstance interface
 	void initialise(ProjectileType* type, FloatA initPos, FloatA initVel);
 
 	void update(float tDelta);
