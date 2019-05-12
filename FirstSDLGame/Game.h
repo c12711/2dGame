@@ -21,24 +21,25 @@ private:
 	
 	bool gameRunning;
 
+	// Game window and renderer
 	SDL_Window*		gameWindow = nullptr;
 	SDL_Renderer*	gameRenderer = nullptr;
 
-	//Adding player sprite
+	// Adding player sprite
 	Sprite*			sprite = nullptr;
 	Player*			mainPlayer = nullptr;
 
-	//Keyboard controls
+	// Keyboard controls
 	KeyFlags		keyState = 0;
 
-	// Recipe 3 - Timing attributes
+	// Timing attributes
 	uint32_t		currentTimeIndex, prevTimeIndex, timeDelta;
 	float			timeDeltaInSeconds;
 
 	// Enemy for shooting and collisions
 	Enemy*			theOtherOne = nullptr;
 
-	// Recipe 9 - Bullets
+	// Lasers
 	static const int MAX_BULLETS = 2000;
 
 	Sprite* bulletSprite = nullptr;

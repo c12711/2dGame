@@ -23,6 +23,7 @@ void Game::initialise()
 	if (sdlStatus != SDL_OKAY)
 		throw "SDL init error";
 
+	// Game window creation
 	gameWindow = SDL_CreateWindow(
 		"Space Carnage",
 		SDL_WINDOWPOS_UNDEFINED,
@@ -46,7 +47,7 @@ void Game::initialise()
 		}
 	}
 
-	// Use first (Default) renderer - this is usually Direct3D based
+	// Create game renderer
 	gameRenderer = SDL_CreateRenderer(gameWindow, 0, 0);
 
 
@@ -96,14 +97,12 @@ void Game::runGameLoop() {
 
 	while (gameRunning) {
 
-		// Recipe 3 - Update timing / clock
-
 		// Calculate time elapsed
 		currentTimeIndex = SDL_GetTicks();
 		timeDelta = currentTimeIndex - prevTimeIndex;
 		timeDeltaInSeconds = float(timeDelta) / 1000.0f;
 
-		// Store current time index into prevTimeIndex for next frame
+		// Stores current time into previous time index for the next frame
 		prevTimeIndex = currentTimeIndex;
 
 		handleEvents();
@@ -112,32 +111,23 @@ void Game::runGameLoop() {
 	}
 }
 
-	//decide if want fullscreen or not when playing game.
-	//int flags = 0;
-	//if (fullscreen)
-	//{
-		//flags = SDL_WINDOW_FULLSCREEN;
-
-	//}
-
-
 void Game::handleEvents() {
 
 	SDL_Event event;
 
+	// Next event check
 	while (SDL_PollEvent(&event)) {
 
 		switch (event.type) {
 
-			// Check if window closed
+		// Check if window is closed
 		case SDL_QUIT:
 			gameRunning = false;
 			break;
 
-			// Key pressed event
+		// When a key is pressed
 		case SDL_KEYDOWN:
 
-			// Toggle key states based on key pressed
 			switch (event.key.keysym.sym) {
 
 			case SDLK_UP:
@@ -166,7 +156,7 @@ void Game::handleEvents() {
 			}
 			break;
 
-			// Key released event
+			// When a key is released
 		case SDL_KEYUP:
 
 			switch (event.key.keysym.sym)
@@ -190,7 +180,7 @@ void Game::handleEvents() {
 			case SDLK_SPACE:
 				keyState &= (~Keys::Fire);
 
-				// Find first "free" bullet
+				// Find the first bullet
 				if (1) {
 
 					int i = 0;
@@ -219,9 +209,9 @@ void Game::update() {
 	// Player movement through keys
 	float		xMovement = 0.0f;
 	float		yMovement = 0.0f;
-	float	rotation = 0.0f;
+	float		rotation = 0.0f;
 
-
+	// Player movement when keys are pressed
 	if (keyState & Keys::Left) {
 		xMovement = -100.0f;
 	}
@@ -234,7 +224,7 @@ void Game::update() {
 			yMovement = 100.0f;
 
 
-		// Ensure length of direction vector is consistent for axis-aligned and diagonal movement
+		// Ensure length of direction vector is consistent for movement
 		float dx = float(xMovement);
 		float dy = float(yMovement);
 
@@ -258,7 +248,7 @@ void Game::update() {
 	mainPlayer->move(xMovement * timeDeltaInSeconds, yMovement * timeDeltaInSeconds);
 	mainPlayer->rotate(rotation * timeDeltaInSeconds);
 
-	// Recipe 9 - Update bullets
+	// Update bullets
 	for (int i = 0; i < MAX_BULLETS; i++) {
 
 		if (bullets[i]) {
@@ -266,11 +256,11 @@ void Game::update() {
 		}
 	}
 
-
+	// Player and enemy collision detection
 	if (CD::intersectAABB(mainPlayer->getBoundingBox(), theOtherOne->getBoundingBox())) {
 
-		// A hit!
-		mainPlayer->addHealth(-0.1f);
+		// A hit
+		mainPlayer->addHealth(-0.5f);
 
 		if (mainPlayer->getHealth() <= 0.0f) {
 
@@ -279,7 +269,7 @@ void Game::update() {
 		}
 	}
 
-	// Recipe 9 - Check for bullet collisions with 'theOtherOne' Enemy object
+	// Check for laser collision with enemy
 	for (int i = 0; i < MAX_BULLETS; i++) {
 
 		if (bullets[i]) {
@@ -292,7 +282,7 @@ void Game::update() {
 		}
 	}
 
-	// Recipe 9 - Check for bullets out of range - delete when found
+	// Laser bullets disappear when out of range
 	for (int i = 0; i < MAX_BULLETS; i++) {
 
 		if (bullets[i] && bullets[i]->exceededRange()) {
@@ -306,20 +296,17 @@ void Game::update() {
 
 void Game::draw() {
 
-	// 1. Clear the screen
+	// Clear screen
 	SDL_SetRenderDrawColor(gameRenderer, 0, 0, 0, 255); // Colour provided as red, green, blue and alpha (transparency) values (ie. RGBA)
 	SDL_RenderClear(gameRenderer);
 
-
-	// 2. Draw the scene...
-
-	// Draw the main player
+	// Draw player
 	mainPlayer->draw(gameRenderer);
 
-	// Recipe 5 - instantiate something to collide against
+	// Instantiate something to collide against
 	theOtherOne->draw(gameRenderer);
 
-	// Recipe 9 - Draw bullets
+	// Draw lasers
 	for (int i = 0; i < MAX_BULLETS; i++) {
 
 		if (bullets[i]) {
@@ -328,6 +315,6 @@ void Game::draw() {
 	}
 
 
-	// 3. Present the current frame to the screen
+	// Render frame to screen
 	SDL_RenderPresent(gameRenderer);
 }

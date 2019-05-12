@@ -22,11 +22,11 @@ void Enemy::initialise(Sprite* sprite, float initX, float initY, int initHealth,
 
 	this->sprite = sprite;
 
-	// Recipe 5 - to define bounding box we need size of sprite in game world!
+	// Size of sprite in game world
 	w = 128.0f;
 	h = 128.0f;
 
-	// Temp variables to calculate the centre point of the sprite given (x, y) are the top left
+	// Calculate centre point of sprite
 	float cx = x + (w / 2.0f);
 	float cy = y + (h / 2.0f);
 
@@ -42,13 +42,16 @@ void Enemy::draw(SDL_Renderer* renderer) {
 
 	SDL_Rect targetRect;
 
+	// Get enemy size
 	targetRect.x = int(x);
 	targetRect.y = int(y);
-	targetRect.w = int(w); // Recipe 5 - get size from attributes - no longer hard-coded values!
+	targetRect.w = int(w);
 	targetRect.h = int(h);
 
+	// Draw enemy
 	sprite->draw(renderer, &targetRect, 0.0f);
 
+	// Draw bounding box to show collision boundary
 	boundingBox.draw(renderer);
 }
 
@@ -58,28 +61,23 @@ void Enemy::move(float xMovement, float yMovement) {
 	x += xMovement;
 	y += yMovement;
 
-	// Recipe 5 - move bounding box too!
+	// Also move bounding box along with enemy
 	boundingBox.move(xMovement, yMovement);
 }
 
-// Recipe 5 - Add AABB accessor so Game Object can get this information to test for collisions
-// Note: GRASP dictates the Enemy class knows nothing about the Game Object - and it doesn't - but any caller can ask for the bounding box
+// Test for collisions in game object
 CD Enemy::getBoundingBox() {
 
 	return boundingBox;
 }
 
-// Recipe 9 - addHealth called when bullets hit with negative value for amountToAdd parameter
+// Code for health loss when lasers hit
 void Enemy::addHealth(int amountToAdd) {
 
 	health += amountToAdd;	
 }
 
-int Enemy::getHealth() {
-
-	return health;
-}
-
+// Points 
 void Enemy::addPoints(int amountToAdd) {
 
 	points += amountToAdd;

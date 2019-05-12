@@ -22,19 +22,20 @@ void Player::initialise(Sprite* sprite, float initX, float initY, float initHeal
 
 	this->sprite = sprite;
 
-	// Recipe 5 - to define bounding box we need size of sprite in game world!
+	// Size of sprite in game world
 	w = 128.0f;
 	h = 128.0f;
 
-	// Temp variables to calculate the centre point of the sprite given (x, y) are the top left
+	// Calculate centre point of sprite
 	float cx = x + (w / 2.0f);
 	float cy = y + (h / 2.0f);
 
-	boundingBox = CD(cx, cy, w / 2.0f, h / 2.0f); // Store half w, h in the bounding box!
+	boundingBox = CD(cx, cy, w / 2.0f, h / 2.0f); // Store half w, h in the bounding box
 
-	// Recipe 8 - Health
+	// Player health
 	health = initHealth;
 
+	// Player speed
 	speed = initSpeed;
 }
 
@@ -47,14 +48,15 @@ void Player::draw(SDL_Renderer* renderer) {
 
 	SDL_Rect	targetRect;
 
+	// Get player size
 	targetRect.x = int(x);
 	targetRect.y = int(y);
-	targetRect.w = int(w); // Recipe 5 - get size from attributes!
+	targetRect.w = int(w); 
 	targetRect.h = int(h);
 
 	sprite->draw(renderer, &targetRect, orientation);
 
-	// Recipe 5 - Draw AABB to show collision boundary
+	// Draw bounding box to show collision boundary
 	boundingBox.draw(renderer);
 }
 
@@ -70,32 +72,32 @@ void Player::move(float xMovement, float yMovement) {
 	x += xMovement;
 	y += yMovement;
 
-	// Recipe 5 - need to move bounding volume too!
+	// Also move bounding box along with enemy
 	boundingBox.move(xMovement, yMovement);
 }
 
 
-// Recipe 4 - Add ability to rotate the player
+// Player rotation (doesn't affect bouding box)
 void Player::rotate(float dTheta) {
 
 	orientation += dTheta;
 
-	// Note: Don't change AABB - this is ALWAYS axis aligned!
+	
 }
 
 
-// Recipe 5 - AABB accessor
+// Test for collisions in game object
 CD Player::getBoundingBox() {
 
 	return boundingBox;
 }
 
 
-// Recipe 8 - Update health by amountToAdd (if amountToAdd is negative the player's health goes down!)
+// Update player health (up or down depending on amountToAdd value)
 void Player::addHealth(float amountToAdd) {
 
 	health += amountToAdd;
-	//printf("health = %f\n", health);
+	printf("health = %f\n", health);
 }
 
 float Player::getHealth() {
